@@ -6,20 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <script type="text/javascript">
+  console.log('1111');
+  
       window.addEventListener("message", processMessages);
- function processMessages(event) {
-     console.log(event);
-    var sendingOrigin = event.origin || event.originalEvent.origin;
-    if (origin !== "https://www.salesforce.com")
-    //check source of the incoming message
-    // ignore message or throw error
-    if(isIncomingDataValid(event.data)) {
-    //isIncomingDataValid is a custom function to validate data format
-    // do something
-    } else {
-    // ignore message or throw error
+    console.log('2222');
+
+    function processMessages(event) {
+        console.log(event);
+        var sendingOrigin = event.origin || event.originalEvent.origin;
+        if (origin !== "https://www.salesforce.com")
+        //check source of the incoming message
+        // ignore message or throw error
+        if(isIncomingDataValid(event.data)) {
+        //isIncomingDataValid is a custom function to validate data format
+        // do something
+        } else {
+        // ignore message or throw error
+        }
     }
- }
 
   </script>
 </head>
