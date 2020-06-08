@@ -8,7 +8,7 @@
   <script>
     // Allow window to listen for a postMessage
         window.addEventListener("message", (event)=>{
-            console.log('RRR', event);
+            console.log('Grnat parrent', event);
             
     // Normally you would check event.origin
             // To verify the targetOrigin matches
@@ -24,14 +24,9 @@
 <body style="background-color:#CCC">
     <div>Hello</div>
     <iframe id="user_tiles_iframe"
-            frameborder="0">
-            
-            <iframe id="user_tiles_iframe"
                 frameborder="0"
                 title="User Summary Tiles"
-                src="https://fabianlema15.github.io/testMessage/">
+                src="https://fabianlema15.github.io/middle/">
             </iframe>
-        
-        </iframe>
 </body>
 </html>
